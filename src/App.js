@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Card from './components/Card';
 import './App.css';
@@ -16,13 +17,15 @@ const images = [
 ]
 
 function App() {
+  const [items, setItems] = useState(images);
   return (
     <>
     <Navbar />
     <div class="container text-center mt-5">
+      <button className='btn btn-warning' onClick={() => setItems(['https://picsum.photos/id/82/200/200', ...items])}>+Add</button>
       <h1>Gallery</h1>
       <div className="row">
-        {images.map((image) => <Card src={image} />)}
+        {items.map((image) => <Card src={image} />)}
       </div>
     </div>
     </>
