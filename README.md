@@ -1,3 +1,7 @@
+Watch a project demonstration below:
+
+https://github.com/AnnaClausen/gallery/assets/102702166/bb936290-ddd0-489c-991d-e74bd89de23a
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
